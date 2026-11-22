@@ -1,0 +1,3 @@
+Project 2 | Video 1
+Corrected transcript pending recording.
+After recording, supply the title, stable URL, duration, and frozen repository commit. Add actual timestamped spoken words, correcting substantive finance terms, tickers and numbers.

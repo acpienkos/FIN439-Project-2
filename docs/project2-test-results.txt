@@ -1,0 +1,141 @@
+Cold-run Python 3.13.7
+Fresh staging directory: <temporary test path>
+Fresh target: pip --isolated install --target <empty target> -r requirements.txt (exit 0).
+Frozen inputs copied from local authorized snapshot. No GitHub-only or partner cold run.
+First failures: embedded Python omitted the working directory; fixed by prepending it. Initial AppTest timed out at 3 seconds; increased startup timeout to 30 seconds.
+Test suite exit 0
+1.66.0 <temporary test path>\streamlit\__init__.py
+
+test_bad_inputs_and_missing_data_fail_closed (__main__.ReadinessChecks.test_bad_inputs_and_missing_data_fail_closed) ... ok
+test_frozen_data_hashes (__main__.ReadinessChecks.test_frozen_data_hashes) ... ok
+test_grid_is_complete (__main__.ReadinessChecks.test_grid_is_complete) ... ok
+test_known_base_and_break_even (__main__.ReadinessChecks.test_known_base_and_break_even) ... ok
+test_portfolio_risk_against_weighted_monthly_returns (__main__.ReadinessChecks.test_portfolio_risk_against_weighted_monthly_returns) ... ok
+test_report_and_independent_stresses (__main__.ReadinessChecks.test_report_and_independent_stresses) ... ok
+test_streamlit_control_changes_verdict (__main__.ReadinessChecks.test_streamlit_control_changes_verdict) ... 2026-11-22 17:43:56.330 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-22 17:43:57.357 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-22 17:43:57.358 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-22 17:43:57.358 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-22 17:43:57.358 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-22 17:44:08.419 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-22 17:44:08.419 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+2026-11-22 17:44:08.440 DEBUG   streamlit.runtime.scriptrunner.script_runner: Beginning script thread
+2026-11-22 17:44:08.441 DEBUG   streamlit.runtime.scriptrunner.script_runner: Running script
+2026-11-22 17:44:08.443 DEBUG   streamlit.runtime.media_file_manager: Disconnecting files for session with ID test session id
+2026-11-22 17:44:08.443 DEBUG   streamlit.runtime.media_file_manager: Sessions still active: dict_keys([])
+2026-11-22 17:44:08.445 DEBUG   streamlit.runtime.media_file_manager: Files: 0; Sessions with files: 0
+2026-11-22 17:44:08.556 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned files...
+2026-11-22 17:44:08.556 DEBUG   streamlit.runtime.media_file_manager: Removing orphaned deferred callables...
+ok
+test_vintage_refuses_same_day_and_current_file (__main__.ReadinessChecks.test_vintage_refuses_same_day_and_current_file) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 12.626s
+
+OK
+
+Loopback Streamlit health: None
+Loopback follow-up with proxy disabled: None
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+    import sys; sys.path[:0]=['<temporary dependency path>', "."]; from streamlit.web.cli import main; sys.argv[0]="streamlit"; main()
+
+                                                                                                                                                                                                ~~~~^^
+
+  File "<temporary test path>\click\core.py", line 1653, in __call__
+
+    return self.main(*args, **kwargs)
+
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\click\core.py", line 1560, in main
+
+    rv = self.invoke(ctx)
+
+  File "<temporary test path>\click\core.py", line 2054, in invoke
+
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+
+  File "<temporary test path>\click\core.py", line 1414, in invoke
+
+    return ctx.invoke(self.callback, **ctx.params)
+
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\click\core.py", line 911, in invoke
+
+    return callback(*args, **kwargs)
+
+  File "<temporary test path>\streamlit\web\cli.py", line 358, in main_run
+
+    _main_run(path_str, args, flag_options=kwargs)
+
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\streamlit\web\cli.py", line 405, in _main_run
+
+    bootstrap.load_config_options(flag_options=flag_options or {})
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\streamlit\web\bootstrap.py", line 405, in load_config_options
+
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\streamlit\config.py", line 3159, in get_config_options
+
+    _on_config_parsed.send()
+
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+
+  File "<temporary test path>\streamlit\signal_util.py", line 100, in send
+
+    receiver(sender, **kwargs)
+
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^
+
+  File "<temporary test path>\streamlit\config.py", line 3385, in receiver
+
+    func_with_lock()
+
+    ~~~~~~~~~~~~~~^^
+
+  File "<temporary test path>\streamlit\config.py", line 3393, in func_with_lock
+
+    func()
+
+    ~~~~^^
+
+  File "<temporary test path>\streamlit\config.py", line 3178, in _check_conflicts
+
+    raise RuntimeError(
+
+        "server.port does not work when global.developmentMode is true."
+
+    )
+
+RuntimeError: server.port does not work when global.developmentMode is true.
+
+
+Loopback follow-up with Streamlit development mode disabled: (200, 'ok')
+2026-11-22 17:45:47.408 Uvicorn server started on 127.0.0.1:54577
+
+
+
+  You can now view your Streamlit app in your browser.
+
+
+
+  URL: http://127.0.0.1:54577
+
+
+
+
+
+Archived Lab 14 JSON -> 60 completed prices per fund -> exact SHA-256 29c8cb2231670c12f2f158a1cad5cb61adf48f685532003862a7b30bd4133a9d (exit 0).

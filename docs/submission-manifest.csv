@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research evolution,no,,,,,,,Private student comparison
+Repository,yes,,FIN439 Project 2,,,pending,,Confirm instructional-team access
+Visible executed output,yes,,Frozen portfolio analysis,2026-10-20,,pending,,GitHub permalink to docs/visible-output.json
+Decision memo,yes,,Home down-payment allocation decision,,,pending,,GitHub permalink to docs/decision-memo.md
+Validation and AI use,yes,,Validation and AI use,,,pending,,GitHub permalink to docs/validation-and-ai-use.md
+Video 1,yes,,How the system and my thinking changed,,,pending,,YouTube max 3:00
+Transcript Video 1,yes,,Corrected transcript 1,,,pending,,GitHub permalink or attachment per brief
+Video 2,yes,,Code and reproducibility,,,pending,,YouTube max 5:00
+Transcript Video 2,yes,,Corrected transcript 2,,,pending,,GitHub permalink or attachment per brief
+Video 3,yes,,Investment committee decision,,,pending,,Live app opening and YouTube max 5:00
+Transcript Video 3,yes,,Corrected transcript 3,,,pending,,GitHub permalink or attachment per brief
+Optional deployed output,no,,,,,,,

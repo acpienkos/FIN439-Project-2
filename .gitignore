@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.env
+.streamlit/secrets.toml
+data/prices.csv
+data/BAA_*.csv
+/docs/student-edition-comparison.md
+/docs/lab18-design-source.md
+/docs/lab19-design-source.md
+/docs/BRIGHTSPACE-CHECKOUT.txt
+/docs/lab20-readiness.md
+/docs/manifest.md
+/docs/verification.txt
