@@ -27,11 +27,11 @@ Status: student prediction and run pending. Follow the [AI-off workflow](locked-
 
 | Pre-run field | Student entry |
 |---|---|
-| Timestamp with time zone | |
-| Baseline source commit | |
-| Exact input and old → new values with units | |
-| Finance mechanism and expected output direction | |
-| Expected modeled eligibility and committee decision effects | |
+| Timestamp with time zone | 2026-11-22T18:19:38.9486922-05:00 |
+| Baseline source commit | 6bd94fc446ffe9f8d10ad9dd358d1a4a9d91d546 |
+| Exact input and old → new values with units | reserve_pct: 20% → 40% |
+| Finance mechanism and expected output direction | I'm increasing the reserve requirement from 20% to 40%. Since the reserve is held in BIL, this change forces more of the portfolio into a low-risk, highly liquid asset and leaves less money available for higher-return investments like VT. Because of that, I expect the portfolio's estimated net return to decrease. I also expect volatility to decrease because a larger share of the portfolio is invested in a lower-risk asset.<br><br>I expect net return to be lower than the baseline 4.1967%, volatility to be lower than the baseline 1.6615%, and the number of qualifying portfolios to stay the same or decrease. |
+| Expected modeled eligibility and committee decision effects | For someone planning to buy a home within five years, keeping more money in liquid, lower-risk investments helps protect the down payment from market swings. I think the model will still find at least one qualifying portfolio, but there may be fewer qualifying options because of the stricter reserve requirement. I expect the selected portfolio to become more conservative. I do not expect the committee recommendation to change, and I expect the authorized allocation to remain at 0% because the project documentation says the committee action stays the same until the additional operational checks are completed. |
 
 After pushing the prediction, record its immutable GitHub URL below. Keep the original commit intact.
 
