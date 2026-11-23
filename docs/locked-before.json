@@ -1,0 +1,143 @@
+﻿{
+  "decision_date": "2026-10-20",
+  "ticker_order": [
+    "BIL",
+    "IEF",
+    "LQD",
+    "VT"
+  ],
+  "inputs": {
+    "months": 59,
+    "cost_bps": 20,
+    "equity_shock_pp": 0,
+    "reserve_pct": 20,
+    "years_remaining": 5
+  },
+  "signal": {
+    "vintage": "2026-09-30",
+    "month": "2026-08-01",
+    "yield_pct": 6.32
+  },
+  "volatility_cap_pct": 4.0,
+  "equity_cap_pct": 25.0,
+  "gross_estimates_pct": [
+    3.6574119509079903,
+    -1.7289390174296828,
+    -0.927642167900725,
+    11.050234519269315
+  ],
+  "rows": {
+    "Equal weight": {
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "net_pct": 2.8127663212117247,
+      "vol_pct": 7.548225201133234,
+      "failures": [
+        "4% net objective",
+        "corporate issuer bound",
+        "volatility cap"
+      ],
+      "rules": {
+        "4% net objective": false,
+        "Fully invested and long-only": true,
+        "BIL reserve": true,
+        "corporate issuer bound": false,
+        "equity glide-path cap": true,
+        "volatility cap": false
+      }
+    },
+    "Inverse volatility": {
+      "weights": [
+        0.872416013537781,
+        0.05548837741918557,
+        0.04339828615860203,
+        0.02869732288443149
+      ],
+      "net_pct": 3.1717028010355133,
+      "vol_pct": 1.3697772880717596,
+      "failures": [
+        "4% net objective"
+      ],
+      "rules": {
+        "4% net objective": false,
+        "Fully invested and long-only": true,
+        "BIL reserve": true,
+        "corporate issuer bound": true,
+        "equity glide-path cap": true,
+        "volatility cap": true
+      }
+    },
+    "BIL benchmark": {
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "net_pct": 3.45741195090799,
+      "vol_pct": 0.49091207846111934,
+      "failures": [
+        "4% net objective"
+      ],
+      "rules": {
+        "4% net objective": false,
+        "Fully invested and long-only": true,
+        "BIL reserve": true,
+        "corporate issuer bound": true,
+        "equity glide-path cap": true,
+        "volatility cap": true
+      }
+    },
+    "Lowest-risk qualifying mix": {
+      "weights": [
+        0.9,
+        0.0,
+        0.0,
+        0.1
+      ],
+      "net_pct": 4.196694207744123,
+      "vol_pct": 1.6615110978430472,
+      "failures": [],
+      "rules": {
+        "4% net objective": true,
+        "Fully invested and long-only": true,
+        "BIL reserve": true,
+        "corporate issuer bound": true,
+        "equity glide-path cap": true,
+        "volatility cap": true
+      }
+    }
+  },
+  "best_net_under_modeled_risk_limits": {
+    "weights": [
+      0.9,
+      0.0,
+      0.0,
+      0.1
+    ],
+    "net_pct": 4.196694207744123,
+    "vol_pct": 1.6615110978430472,
+    "failures": [],
+    "rules": {
+      "4% net objective": true,
+      "Fully invested and long-only": true,
+      "BIL reserve": true,
+      "corporate issuer bound": true,
+      "equity glide-path cap": true,
+      "volatility cap": true
+    }
+  },
+  "feasible_count": 1,
+  "action": "Reject live allocation",
+  "authorized_allocation_pct": 0,
+  "implementation_gates": {
+    "Five-business-day availability for at least 90%": "Open",
+    "Verify fund holdings and derivatives policy": "Open",
+    "Confirm client purchase date and loss tolerance": "Open",
+    "Validate hurdle against independent holdout": "Open"
+  }
+}
