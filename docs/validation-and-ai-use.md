@@ -1,6 +1,6 @@
 # Validation and AI use
 
-Snapshot October 20, 2026. Source dates, use limits, and archive gates are in the [data card](data-card.md). The app uses the same engine as the [frozen output](visible-output.json). Setups and open items are in the [readiness record](lab20-readiness.md).
+Snapshot October 20, 2026. Source dates, use limits, and archive gates are in the [data card](data-card.md). The app uses the same engine as the [frozen output](visible-output.json). See the [README](../README.md) for setup and the [execution log](project2-test-results.txt) for the standalone test run.
 
 ## Baseline and mandate check
 
@@ -44,9 +44,9 @@ Status: completed on November 23, 2026. The student executed both cases independ
 
 ## AI disclosure
 
-Andrew Pienkos wrote the prediction independently with AI off and supplied the original wording. OpenAI Codex copied it into the pre-run table verbatim and published the prediction commit before execution. On November 23, Andrew ran both cases independently in PowerShell with AI off. After execution, Codex checked the preserved JSON, helped interpret the comparison, and edited the post-run documentation from Andrew’s findings. Both original output files were preserved.
+Andrew Pienkos independently selected the changed input and developed the financial prediction with AI off. OpenAI Codex copied Andrew’s original wording into the pre-run table verbatim and published the prediction commit before execution. On November 23, Andrew ran both PowerShell cases with ChatGPT and Codex closed and independently evaluated the results before returning to AI assistance. After that evaluation, ChatGPT and Codex assisted with organizing, reviewing, documenting, and explaining the experiment. Codex checked the preserved JSON and edited the post-run record using Andrew’s findings. Both original outputs were preserved.
 
-On November 17, 2026, OpenAI Codex assisted with course and repository review, design, implementation, automated tests, and documentation. The model version was not exposed in the work environment for this record. Codex proposed a 90/10 candidate based on the engine output. Validation recomputes its net estimate directly as 90% of the BIL estimate plus 10% of the VT estimate minus annual drag and probes the modeled 39/40 bp boundary. The result is accepted for a frozen scenario and qualified for deployment because the estimate is in-sample and operational mandate gates are open. Student review and ownership evidence remain pending.
+On November 17, 2026, OpenAI Codex assisted with course and repository review, design, implementation, automated tests, and documentation. The model version was not exposed in the work environment for this record. Codex proposed a 90/10 candidate based on the engine output. Validation recomputes its net estimate directly as 90% of the BIL estimate plus 10% of the VT estimate minus annual drag and probes the modeled 39/40 bp boundary. The checks support the modeled result for the frozen scenario. The estimate is in-sample and the operational gates remain open.
 
 
 ## Standalone validation, November 22, 2026
@@ -62,4 +62,4 @@ On November 17, 2026, OpenAI Codex assisted with course and repository review, d
 
 See the [execution log](project2-test-results.txt) for first failures and retries. The research controls and regression tests validate the tool's behavior. The separate student-run locked experiment is documented above with its original outputs and reconciliation.
 
-OpenAI Codex on November 22, 2026 assisted with the standalone implementation, evidence packaging, financial cross-checks and recording drafts. The exposed surface is Codex and a model revision was not shown. Codex's inherited 90/10 claim was checked by independently computing risk from the weighted monthly return series rather than the covariance matrix and by substituting the published estimates into the net-return formula. The calculation supports a modeled pass. The committee recommendation remains qualified by in-sample data, the small net-return margin and the open implementation gates. The student's reconciliation of the locked experiment is recorded above.
+OpenAI Codex on November 22, 2026 assisted with the standalone implementation, evidence packaging, financial cross-checks and recording drafts. The exposed surface is Codex and a model revision was not shown. The Codex-assisted validation checked the 90/10 result in two ways. It calculated risk directly from the weighted monthly return series and compared it with the covariance-based result. It also substituted the published estimates into the net-return formula. The calculation supports a modeled pass. The committee recommendation remains qualified by in-sample data, the small net-return margin and the open implementation gates. The student's reconciliation of the locked experiment is recorded above.

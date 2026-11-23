@@ -9,10 +9,10 @@ Reviewed the official Project 2 brief, student checklist, submission architectur
 | Equal weight, transparent second baseline, constrained mix, verdicts | App and visible output. Inverse volatility is the second baseline and BIL is the benchmark. |
 | Point-in-time signal and data card | September 30 ALFRED vintage with an as-of gate. |
 | Estimates, window, costs, constraints, stop condition | Frozen outputs, sensitivity table, sidebar controls and committee memo. |
-| Locked Changed-Input Record | Template ready. Student prediction, pushed GitHub commit, AI-off run and reconciliation pending. |
+| Locked Changed-Input Record | Complete. The student independently selected the input, wrote the prediction, ran both cases with AI off, and evaluated the results before returning to AI. Codex published the prediction verbatim before the run. The [validation record](validation-and-ai-use.md) links the [locked prediction](https://github.com/acpienkos/FIN439-Project-2/commit/828d4ad3b9a39d28194f75dc8aafaa516fd42a84) and includes the post-run reconciliation. |
 | Allocation range and monitoring | Memo recommends 0% now and lists conditions for reconsidering a 0–5% VT pilot. |
 | Opening disclosure and education statement | README and memo. Scripts include both for student review and recording. |
-| GitHub and written Markdown files | Local files ready for review. Remote, access and frozen filenames pending. |
+| GitHub and written Markdown files | The repository and written evidence are published. Confirm grader access and Brightspace filenames. |
 | Three videos, transcripts, timestamps | Scripts and placeholders ready. Genuine recordings, captions, and timings pending. |
 | Manifest | 12 rows following the shared checklist. Project 2 does not submit the private A/B comparison. |
 | Private A/B comparison | Student working template. No historical baseline is reconstructed. |
@@ -25,7 +25,7 @@ The single-company valuation logic in Legend Investor (Lab 18) and Legend Panel 
 | Data integrity, 45 | Frozen dates, hashes and source boundaries documented. Resolve grader access to authorized inputs. |
 | Financial soundness, 60 | Benchmark, objective, constrained allocation and four stress dimensions. No independent out-of-sample evidence supports a live pilot. |
 | Technical execution, 45 | Streamlit app, reproducible output and input errors. Independent grader cold start depends on input access. |
-| Validation, 75 | Known answers, direct risk cross-check, failure tests, sensitivity and frozen reproduction. The locked experiment and student's own AI-output check are still open. |
+| Validation, 75 | Known answers, direct risk cross-check, failure tests, sensitivity and frozen reproduction. The locked experiment and reconciliation are complete. Video 1 still needs to show the documented AI output and its corresponding validation. |
 | Communication, 30 | Memo, README, manifest and scripts. The recordings and corrected transcripts are still open. |
 
 [Official brief](https://github.com/CinderZhang/FIN43900-Fall2026/blob/bb73c5fe49648b5076e8419ff3dd095ffdc13f45/projects/project-2-investment-management-application.md) · [Checklist](https://github.com/CinderZhang/FIN43900-Fall2026/blob/bb73c5fe49648b5076e8419ff3dd095ffdc13f45/projects/major-project-student-checklist.md)
